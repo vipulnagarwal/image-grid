@@ -32,7 +32,7 @@ function getArticleImage(page) {
   image.className =
     "img article-list__item__image article-list__item__image--loading";
   image.src = "https://picsum.photos/500/" + hash;
-
+  image.alt = "";
   image.onload = function () {
     image.classList.remove("article-list__item__image--loading");
   };
