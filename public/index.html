@@ -1,107 +1,293 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link href="./grid.css" rel="stylesheet">
+    <link href="./grid.css" rel="stylesheet" />
 
     <title>Image Grid test project</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    
+    <h1>Simple pagination</h1>
 
     <main class="container">
       <div class="article-list" id="article-list">
-      <div id="article-page-1" class="article-list__page grid-wrapper">
-        <div >
-          <img class="img" src="https://picsum.photos/500/300" alt="">
+        <div id="article-page-1" class="article-list__page grid-wrapper">
+          <div>
+            <img class="img" src="https://picsum.photos/500/300" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/301" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/302" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/600" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/800" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/400" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/900" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/305" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
         </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/301" alt="">
+        <div id="article-page-2" class="article-list__page grid-wrapper hide">
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/900" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/305" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/500" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/901" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/700" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/402" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/306" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/306" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/901" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/700" alt="" />
+          </div>
         </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/302" alt="">
+        <div id="article-page-3" class="article-list__page grid-wrapper hide">
+          <div>
+            <img class="img" src="https://picsum.photos/500/300" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/301" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/302" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/600" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/800" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/400" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/900" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/305" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
         </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/600" alt="">
+        <div id="article-page-4" class="article-list__page grid-wrapper hide">
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/900" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/305" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/500" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/901" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/700" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/402" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/306" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/306" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/901" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/700" alt="" />
+          </div>
         </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/800" alt="">
+        <div id="article-page-5" class="article-list__page grid-wrapper hide">
+          <div>
+            <img class="img" src="https://picsum.photos/500/300" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/301" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/302" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/600" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/800" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/400" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/900" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/305" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
         </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/400" alt="">
-        </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/304" alt="">
-        </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/401" alt="">
-        </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/900" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/305" alt="">
-        </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/304" alt="">
-        </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/401" alt="">
+        <div id="article-page-6" class="article-list__page grid-wrapper hide">
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/900" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/305" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/500" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/901" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/700" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/402" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/306" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/306" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/901" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/700" alt="" />
+          </div>
         </div>
       </div>
-      <!-- <div id="article-page-2" class="article-list__page grid-wrapper">
-        <div >
-          <img class="img" src="https://picsum.photos/500/304" alt="">
-        </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/401" alt="">
-        </div>
-        <div >
-          <img class="img" src="https://picsum.photos/500/900" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/305" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/500" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/901" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/700" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/402" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/306" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/306" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/901" alt="">
-        </div>
-        <div>
-          <img class="img" src="https://picsum.photos/500/700" alt="">
-        </div>
-      </div> -->
-    </div>
-      <ul class="article-list__pagination article-list__pagination--inactive" id="article-list-pagination">
-        <li class="article-list__pagination__item"><a href="#article-page-1">1</a></li>
-        <!-- <li class="article-list__pagination__item"><a href="#article-page-2">2</a></li> -->
+      <ul
+        class="article-list__pagination article-list__pagination--inactive"
+        id="article-list-pagination"
+      >
+        <li class="article-list__pagination__item">
+          <a data-page="1" href="#article-page-1">1</a>
+        </li>
+        <li class="article-list__pagination__item">
+          <a data-page="2" href="#article-page-2">2</a>
+        </li>
+        <li class="article-list__pagination__item">
+          <a data-page="3" href="#article-page-3">3</a>
+        </li>
+        <li class="article-list__pagination__item">
+          <a data-page="4" href="#article-page-4">4</a>
+        </li>
+        <li class="article-list__pagination__item">
+          <a data-page="5" href="#article-page-5">5</a>
+        </li>
+        <li class="article-list__pagination__item">
+          <a data-page="6" href="#article-page-6">6</a>
+        </li>
       </ul>
     </main>
 
-<script src="./utils.js">
-
-</script>
+    <script>
+      (() => {
+        let currentPage = 1;
+        function addClass() {
+          var elems = document.querySelectorAll(".grid-wrapper");
+          [].forEach.call(elems, function (el) {
+            el.classList.add("hide");
+          });
+        }
+        function removeClass(pageNo) {
+          var elems = document.querySelectorAll(".grid-wrapper");
+          elems[pageNo - 1].classList.remove("hide");
+        }
+        document.getElementById("article-list-pagination").onclick =
+          function paginationClickHandler(e) {
+            currentPage = e.target.dataset.page;
+            addClass();
+            removeClass(currentPage);
+          };
+      })();
+    </script>
   </body>
 </html>

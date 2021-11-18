@@ -28,14 +28,12 @@ function getArticleImage(page) {
   if (hash < 200) {
     hash = 500 + Math.floor(Math.random() * page);
   }
-  debugger;
   const image = new Image();
   image.className =
     "img article-list__item__image article-list__item__image--loading";
   image.src = "https://picsum.photos/500/" + hash;
 
   image.onload = function () {
-    debugger;
     image.classList.remove("article-list__item__image--loading");
   };
 
@@ -99,7 +97,6 @@ let page = 1;
 addPage(++page);
 
 window.onscroll = function () {
-  debugger;
   console.log(getDocumentHeight());
   console.log("getScrollTop()==>", getScrollTop());
   if (getScrollTop() < getDocumentHeight() - (window.innerHeight + 100)) {

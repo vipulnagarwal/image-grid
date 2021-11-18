@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./grid.css" rel="stylesheet" />
+    <title>Image Grid test project</title>
+  </head>
+  <body>
+    <h1>example for infinite scroll!</h1>
+    <main class="container">
+      <div class="article-list" id="article-list">
+        <div id="article-page-1" class="article-list__page grid-wrapper">
+          <div>
+            <img class="img" src="https://picsum.photos/500/300" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/301" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/302" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/600" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/800" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/400" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/900" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/305" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/304" alt="" />
+          </div>
+          <div>
+            <img class="img" src="https://picsum.photos/500/401" alt="" />
+          </div>
+        </div>
+      </div>
+      <ul
+        class="article-list__pagination article-list__pagination--inactive"
+        id="article-list-pagination"
+      >
+        <li class="article-list__pagination__item">
+          <a href="#article-page-1">1</a>
+        </li>
+      </ul>
+    </main>
+
+    <script src="./utils.js"></script>
+  </body>
+</html>

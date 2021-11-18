@@ -69,3 +69,7 @@ img {
     display: inline-block;
     margin: 0 1em;
 }
+
+.hide{
+    display: none;
+}
