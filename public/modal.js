@@ -1,30 +1,21 @@
 /* This script supports IE9+ */
 (function () {
   /* Opening modal window function */
-  function openModal() {
-    /* Get trigger element */
-    var modalTrigger = document.getElementsByClassName("image-thumb");
+  const openModal = (ele) => {
+    var src = ele.getAttribute("src");
+    const image = new Image();
+    image.className = "img";
+    image.src = src;
+    image.alt = "";
+    const modalWindow = document.getElementById("jsModal");
+    const modalImgContainer = document.getElementById("img-container");
+    modalImgContainer.innerHTML = "";
+    modalImgContainer.appendChild(image);
 
-    /* Set onclick event handler for all trigger elements */
-    for (var i = 0; i < modalTrigger.length; i++) {
-      modalTrigger[i].onclick = function () {
-        var src = this.getAttribute("src");
-        const image = new Image();
-        image.className = "img";
-        image.src = src;
-        image.alt = "";
-        debugger;
-        const modalWindow = document.getElementById("jsModal");
-        const modalImgContainer = document.getElementById("img-container");
-        modalImgContainer.innerHTML = "";
-        modalImgContainer.appendChild(image);
-
-        modalWindow.classList
-          ? modalWindow.classList.remove("hide")
-          : (modalWindow.className += " " + "hide");
-      };
-    }
-  }
+    modalWindow.classList
+      ? modalWindow.classList.remove("hide")
+      : (modalWindow.className += " " + "hide");
+  };
 
   function closeModal() {
     /* Get close button */
@@ -76,6 +67,12 @@
   }
 
   /* Triggering modal window function after dom ready */
-  ready(openModal);
+  // ready(openModal);
   ready(closeModal);
+
+  document.addEventListener("click", function (e) {
+    if (e.target && e.target.classList.value.indexOf("image-thumb") > -1) {
+      openModal(e.target);
+    }
+  });
 })();
