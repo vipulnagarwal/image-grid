@@ -7,5 +7,5 @@ const PORT = process.env.PORT || 5000;
 app.use(express.static(path.join(__dirname, "public")));
 
 app.listen(PORT, () => {
-  console.log("listening on ==>", PORT);
+  console.log("Image grid node js app listening on port " + PORT + "...");
 });
