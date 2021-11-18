@@ -30,7 +30,7 @@ function getArticleImage(page) {
   }
   const image = new Image();
   image.className =
-    "img article-list__item__image article-list__item__image--loading";
+    "img article-list__item__image article-list__item__image--loading image-thumb";
   image.src = "https://picsum.photos/500/" + hash;
   image.alt = "";
   image.onload = function () {
@@ -97,8 +97,6 @@ let page = 1;
 addPage(++page);
 
 window.onscroll = function () {
-  console.log(getDocumentHeight());
-  console.log("getScrollTop()==>", getScrollTop());
   if (getScrollTop() < getDocumentHeight() - (window.innerHeight + 100)) {
     return;
   }
