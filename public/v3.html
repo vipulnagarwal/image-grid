@@ -572,23 +572,53 @@
         class="article-list__pagination article-list__pagination--inactive"
         id="article-list-pagination"
       >
-        <li class="article-list__pagination__item">
-          <a data-page="1" href="#article-page-1">1</a>
+        <li>
+          <a
+            data-page="1"
+            class="article-list__pagination__item"
+            href="#article-page-1"
+            >1</a
+          >
         </li>
-        <li class="article-list__pagination__item">
-          <a data-page="2" href="#article-page-2">2</a>
+        <li>
+          <a
+            data-page="2"
+            class="article-list__pagination__item"
+            href="#article-page-2"
+            >2</a
+          >
         </li>
-        <li class="article-list__pagination__item">
-          <a data-page="3" href="#article-page-3">3</a>
+        <li>
+          <a
+            data-page="3"
+            class="article-list__pagination__item"
+            href="#article-page-3"
+            >3</a
+          >
         </li>
-        <li class="article-list__pagination__item">
-          <a data-page="4" href="#article-page-4">4</a>
+        <li>
+          <a
+            data-page="4"
+            class="article-list__pagination__item"
+            href="#article-page-4"
+            >4</a
+          >
         </li>
-        <li class="article-list__pagination__item">
-          <a data-page="5" href="#article-page-5">5</a>
+        <li>
+          <a
+            data-page="5"
+            class="article-list__pagination__item"
+            href="#article-page-5"
+            >5</a
+          >
         </li>
-        <li class="article-list__pagination__item">
-          <a data-page="6" href="#article-page-6">6</a>
+        <li>
+          <a
+            data-page="6"
+            class="article-list__pagination__item"
+            href="#article-page-6"
+            >6</a
+          >
         </li>
       </ul>
     </main>
@@ -614,12 +644,22 @@
           var elems = document.querySelectorAll(".grid-wrapper");
           elems[pageNo - 1].classList.remove("hide");
         }
-        document.getElementById("article-list-pagination").onclick =
-          function paginationClickHandler(e) {
-            currentPage = e.target.dataset.page;
-            addClass();
-            removeClass(currentPage);
-          };
+        // document.getElementById("article-list__pagination__item").onclick =
+        function paginationClickHandler(e) {
+          currentPage = e.target.dataset.page;
+          addClass();
+          removeClass(currentPage);
+        }
+
+        document.addEventListener("click", function (e) {
+          if (
+            e.target &&
+            e.target.classList.value.indexOf("article-list__pagination__item") >
+              -1
+          ) {
+            paginationClickHandler(e);
+          }
+        });
       })();
     </script>
 

@@ -65,9 +65,13 @@ img {
   z-index: 2;
 }
 
+.article-list__pagination li{
+  display: inline-block;
+}
+
 .article-list__pagination__item {
     display: inline-block;
-    margin: 0 1em;
+    padding: 0 1em;
 }
 
 .image-thumb{

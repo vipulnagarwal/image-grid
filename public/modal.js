@@ -2,7 +2,8 @@
 (function () {
   /* Opening modal window function */
   const openModal = (ele) => {
-    var src = ele.getAttribute("src");
+    //const originalSrc = ele.dataset.originalsrc || "";
+    const src = ele.getAttribute("src");
     const image = new Image();
     image.className = "img";
     image.src = src;

@@ -51,7 +51,7 @@ class PhotoGallery {
       item.classList.add("item");
       item.innerHTML = `
       <div class="img-container">
-        <img src="${photo.src.medium}" class="image-thumb">
+        <img data-originalSrc="${photo.src.original}" src="${photo.src.medium}" class="image-thumb">
         <h3>${photo.photographer}</h3>
       </div>
       `;
